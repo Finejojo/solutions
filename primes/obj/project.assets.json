@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Decagon001\\source\\repos\\primes\\primes\\primes.csproj",
+      "projectUniqueName": "C:\\Users\\Decagon001\\source\\repos\\primes\\solutions\\primes\\primes.csproj",
       "projectName": "primes",
-      "projectPath": "C:\\Users\\Decagon001\\source\\repos\\primes\\primes\\primes.csproj",
+      "projectPath": "C:\\Users\\Decagon001\\source\\repos\\primes\\solutions\\primes\\primes.csproj",
       "packagesPath": "C:\\Users\\Decagon001\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Decagon001\\source\\repos\\primes\\primes\\obj\\",
+      "outputPath": "C:\\Users\\Decagon001\\source\\repos\\primes\\solutions\\primes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
