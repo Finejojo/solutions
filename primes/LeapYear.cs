@@ -17,6 +17,8 @@ namespace Leap
             //    isGreater = true;
             //}
             //Console.WriteLine(isGreater);
+
+
             // new project
             Console.WriteLine("what is the height of the building");
             string input = Console.ReadLine();
