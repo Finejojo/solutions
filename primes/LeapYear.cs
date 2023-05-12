@@ -1,34 +1,36 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-using System;
+﻿using System;
 
-namespace Leap
+class BankAccount
+
 {
-    public class LeapYear
+    internal readonly object? Balance;
+    private string accountNumber;
+    private decimal balance;
+
+    public BankAccount(string accountNumber, decimal balance)
+    {  
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+}
+    public void Deposit(decimal amount)
     {
-        public static void Main(string[] args)
+        if (amount <= 0)
         {
-            //int[] intArray = { 2, 7, 12 };
-            //int multiply = intArray[0] * intArray[1];
-            //int addition = intArray[0] + intArray[1];
-            //bool isGreater = false;
-            //if (multiply > intArray[2] || addition > intArray[2])
-            //{
-            //    isGreater = true;
-            //}
-            //Console.WriteLine(isGreater);
-
-
-            // new project
-            Console.WriteLine("what is the height of the building");
-            string input = Console.ReadLine();
-            double height = Convert.ToDouble(input);
-            if (height > 7) { Console.WriteLine("special fire safety measures required"); }
-            else { Console.WriteLine("No special safety measures required"); }
-
-            Console.ReadKey();
+            Console.WriteLine("Amount must be greater than zero.");
+            return;
         }
-        
+
+        balance += amount;
+        Console.WriteLine("${0} deposited into account {1}. New balance is ${2}.", amount, accountNumber, balance);
+     }
     }
-   
+class Program
+{
+    static void Main(string[] args)
+    {
+        BankAccount account = new BankAccount("123456789", 1000.00m);
+        Console.WriteLine("current balance is ${0}.", account.Balance);
+        account.Deposit(500.00m);
+        Console.WriteLine("New balance is ${0}.", account.Balance);
+    }
 }
